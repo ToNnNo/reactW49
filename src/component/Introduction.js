@@ -2,6 +2,7 @@ import Welcome from './Welcome';
 import { NumberFormatter } from '../formatter/Number';
 import Hello from './Hello';
 import Notification from './Notification';
+import UselessButton from './UselessButton';
 
 export default function Introduction() {
 
@@ -82,24 +83,29 @@ export default function Introduction() {
 
     <h3>Les Evènements</h3>
 
-    <button onClick={handleClick}>Déclencher un évènement</button>
-    
-    { /* Ne fonctionne pas, fait appel directement à la fonction alert()*/}
-    { /* <button onClick={alert('Coucou')}>
-        Déclencher la fonction alert()</button> */ }
+    <div>
+        <button onClick={handleClick}>Déclencher un évènement</button>
+        
+        { /* Ne fonctionne pas, fait appel directement à la fonction alert()*/}
+        { /* <button onClick={alert('Coucou')}>
+            Déclencher la fonction alert()</button> */ }
 
-    <button onClick={ () => { alert('Coucou') } }>
-        Déclencher la fonction alert()</button>
+        <button onClick={ () => { alert('Coucou') } }>
+            Déclencher la fonction alert()</button>
 
-    <button data-name="John" onDoubleClick={ 
-        (event) => { 
-            console.log(event);
-            const target = event.target;
-            const name = target.dataset.name;
+        <button data-name="John" onDoubleClick={ 
+            (event) => { 
+                console.log(event);
+                const target = event.target;
+                const name = target.dataset.name;
 
-            alert(`Hello ${name}`);
-        } 
-    }>Affiche le detail de l'évènement</button>
+                alert(`Hello ${name}`);
+            } 
+        }>Affiche le detail de l'évènement</button>
+    </div>
+    <div>
+        <UselessButton directory="FormationReact" />
+    </div>
 </div>
     ); 
 }
