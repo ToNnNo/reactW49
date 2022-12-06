@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Introduction from './component/Introduction';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Introduction /> {/* exemple d'appel d'un composant React */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
