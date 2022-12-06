@@ -1,8 +1,8 @@
-import Welcome from './Welcome';
+import Welcome from '../component/Welcome';
 import { NumberFormatter } from '../formatter/Number';
-import Hello from './Hello';
-import Notification from './Notification';
-import UselessButton from './UselessButton';
+import Hello from '../component/Hello';
+import Notification from '../component/Notification';
+import UselessButton from '../component/UselessButton';
 
 export default function Introduction() {
 

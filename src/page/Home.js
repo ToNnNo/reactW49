@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Introduction from './page/Introduction';
+import logo from '../logo.svg';
+import '../App.css';
 
-function App() {
+export default function Home() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Introduction /> {/* exemple d'appel d'un composant React */}
+        {/*<Introduction />*/} {/* exemple d'appel d'un composant React */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -23,5 +22,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
