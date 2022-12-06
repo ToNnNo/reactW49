@@ -3,7 +3,7 @@ import Nav from "./router/Nav";
 
 function App() {
   return (
-    <div>
+    <>
       <header>
         <h1>Formation React</h1>
       </header>
@@ -13,14 +13,14 @@ function App() {
       </main>
       <footer>
         <hr />
-        <p>
+        <p className="text-center">
           <small>
             Formation React - Dawan FOAD - Décembre 2022<br />
             POE Marseille - Nice - Strasbourg - Bordeaux
           </small>
         </p>
       </footer>
-    </div>
+    </>
   );
 }
 

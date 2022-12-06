@@ -1,0 +1,13 @@
+.list-horizontal > * {
+  margin-bottom: 10px;
+}
+
+.list-horizontal > dt {
+  font-weight: bold;
+  float: left;
+  width: 100px;
+}
+
+.list-horizontal > dt::after {
+  content: ': ';
+}
