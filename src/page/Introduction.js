@@ -12,6 +12,7 @@ export default function Introduction() {
 
     const numbers = [1, 2];
     const [a, b] = numbers;
+    console.log(a, b);
 
     const user = { username: "John Doe", email: "john.doe@gmail.com", password: "P4ssW0rd" };
     const { username, email, password, role = "user" } = user;
