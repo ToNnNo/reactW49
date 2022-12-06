@@ -2,6 +2,9 @@ import React from 'react';
 
 export default class UselessButton extends React.Component {
 
+    // Défini des valeurs par défaut pour les props
+    static defaultProps = { directory: 'Desktop' };
+
     constructor() {
         super(); // obligatoire: fait appel au constructeur parent
         

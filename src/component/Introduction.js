@@ -104,7 +104,12 @@ export default function Introduction() {
         }>Affiche le detail de l'évènement</button>
     </div>
     <div>
+        <p>Avec un répertoire défini</p>
         <UselessButton directory="FormationReact" />
+    </div>
+    <div>
+        <p>Sans répertoire défini</p>
+        <UselessButton />
     </div>
 </div>
     ); 
