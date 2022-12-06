@@ -16,6 +16,9 @@ export default function Nav() {
         <li>
           <Link to="/assets">Les Assets</Link>
         </li>
+        <li>
+          <Link to="/state">Etat Local</Link>
+        </li>
       </ul>
     </nav>
   );
