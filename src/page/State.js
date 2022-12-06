@@ -1,3 +1,4 @@
+import Clock from "../component/Clock";
 import Counter from "../component/Counter";
 
 export default function State() {
@@ -11,6 +12,10 @@ export default function State() {
       <Counter step="2" />
 
       <Counter step="10" />
+
+      <h2>Le cycle de vie</h2>
+
+      <Clock />
     </>
   )
 
