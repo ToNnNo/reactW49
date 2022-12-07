@@ -25,6 +25,9 @@ export default function Nav() {
         <li>
           <Link to="/router">React Router DOM</Link>
         </li>
+        <li>
+          <Link to="/formulaire">Formulaire</Link>
+        </li>
       </ul>
     </nav>
   );
