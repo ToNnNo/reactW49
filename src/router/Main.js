@@ -4,6 +4,7 @@ import Introduction from '../page/Introduction';
 import Fragment from '../page/Fragment';
 import Asset from "../page/Asset";
 import State from "../page/State";
+import Hook from "../page/Hook";
 
 export default function Main() {
   return (
@@ -13,6 +14,7 @@ export default function Main() {
       <Route path="fragment" element={ <Fragment /> } />
       <Route path="assets" element={ <Asset /> } />
       <Route path="state" element={ <State /> } />
+      <Route path="hook" element={ <Hook /> } />
     </Routes>
   );
 }
