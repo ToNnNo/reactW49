@@ -5,6 +5,9 @@ import Fragment from '../page/Fragment';
 import Asset from "../page/Asset";
 import State from "../page/State";
 import Hook from "../page/Hook";
+import RouterDOM from "../page/RouterDOM";
+import DetailUser from "../page/DetailUser";
+import NotFound from "../page/error/NotFound";
 
 export default function Main() {
   return (
@@ -15,6 +18,10 @@ export default function Main() {
       <Route path="assets" element={ <Asset /> } />
       <Route path="state" element={ <State /> } />
       <Route path="hook" element={ <Hook /> } />
+      <Route path="user/:id" element={ <DetailUser />} />
+      <Route path="router/*" element={ <RouterDOM /> } />
+
+      <Route path="*" element={ <NotFound /> } />
     </Routes>
   );
 }

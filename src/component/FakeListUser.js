@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function FakeListUser() {
 
@@ -22,7 +23,7 @@ export default function FakeListUser() {
   }, [loadUser]);
   // le second paramètre (dépendance) de la fonction useEffect permet de définir si le cycle de vie (didUpdate)
   // doit se déclencher ou pas.
-  // le déclenchement se produit si et seulement si, une dépendance (valeur) change
+  // le déclenchement se produit si et seulement si, une dépendance () change
 
   return (
     <>
@@ -34,6 +35,7 @@ export default function FakeListUser() {
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -44,6 +46,9 @@ export default function FakeListUser() {
                 <td>{ user.name }</td>
                 <td>{ user.email }</td>
                 <td>{ user.phone }</td>
+                <td>
+                  <Link to={"/user/"+user.id}>Voir le détail</Link>
+                </td>
               </tr>
             ))
           }

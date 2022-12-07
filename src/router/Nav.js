@@ -22,6 +22,9 @@ export default function Nav() {
         <li>
           <Link to="/hook">Les Hooks</Link>
         </li>
+        <li>
+          <Link to="/router">React Router DOM</Link>
+        </li>
       </ul>
     </nav>
   );

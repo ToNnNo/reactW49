@@ -46,5 +46,5 @@ hr {
 .nav > li > a:hover,
 .nav > li > a:focus {
   background-color: blueviolet;
-  color: whitesmoke;
+  color: white;
 }
