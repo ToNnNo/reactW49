@@ -28,6 +28,9 @@ export default function Nav() {
         <li>
           <Link to="/formulaire">Formulaire</Link>
         </li>
+        <li>
+          <Link to="/redux">Redux</Link>
+        </li>
       </ul>
     </nav>
   );

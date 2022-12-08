@@ -9,6 +9,7 @@ import RouterDOM from "../page/RouterDOM";
 import DetailUser from "../page/DetailUser";
 import NotFound from "../page/error/NotFound";
 import Formulaire from "../page/Formulaire";
+import Redux from "../page/Redux";
 
 export default function Main() {
   return (
@@ -22,6 +23,7 @@ export default function Main() {
       <Route path="user/:id" element={ <DetailUser />} />
       <Route path="router/*" element={ <RouterDOM /> } />
       <Route path="formulaire" element={ <Formulaire /> } />
+      <Route path="redux" element={ <Redux /> } />
 
       <Route path="*" element={ <NotFound /> } />
     </Routes>
