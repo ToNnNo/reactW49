@@ -34,7 +34,7 @@ export default function ListProduct() {
         </thead>
         <tbody>
           { products.map((product) => (
-            <tr>
+            <tr key={product.id}>
               <td>{product.id}</td>
               <td>{product.name}</td>
               <td>{CurrencyFormatter(product.price)}</td>
