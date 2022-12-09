@@ -12,6 +12,7 @@ import Formulaire from "../page/Formulaire";
 import Redux from "../page/Redux";
 import AdminRoutesGuard from "../page/admin/guard/AdminRoutesGuard";
 import SignIn from "../page/SignIn";
+import ListProduct from "../page/admin/Products/ListProduct";
 
 export default function Main() {
   return (
@@ -30,7 +31,7 @@ export default function Main() {
 
       <Route path="admin" element={ <AdminRoutesGuard /> }>
         <Route index element={ <h2>Administration: Dashboard</h2> } />
-        <Route path="products" element={ <h2>Liste des produits</h2> } />
+        <Route path="products" element={ <ListProduct /> } />
       </Route>
       <Route path="*" element={ <NotFound /> } />
     </Routes>
