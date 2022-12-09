@@ -31,6 +31,12 @@ export default function Nav() {
         <li>
           <Link to="/redux">Redux</Link>
         </li>
+        <li>
+          <Link to="/admin">Administration</Link>
+        </li>
+        <li>
+          <Link to="/admin/products">Liste des produits</Link>
+        </li>
       </ul>
     </nav>
   );
