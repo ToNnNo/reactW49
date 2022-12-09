@@ -11,6 +11,7 @@ import NotFound from "../page/error/NotFound";
 import Formulaire from "../page/Formulaire";
 import Redux from "../page/Redux";
 import AdminRoutesGuard from "../page/admin/guard/AdminRoutesGuard";
+import SignIn from "../page/SignIn";
 
 export default function Main() {
   return (
@@ -25,6 +26,8 @@ export default function Main() {
       <Route path="router/*" element={ <RouterDOM /> } />
       <Route path="formulaire" element={ <Formulaire /> } />
       <Route path="redux" element={ <Redux /> } />
+      <Route path="signin" element={ <SignIn /> } />
+
       <Route path="admin" element={ <AdminRoutesGuard /> }>
         <Route index element={ <h2>Administration: Dashboard</h2> } />
         <Route path="products" element={ <h2>Liste des produits</h2> } />

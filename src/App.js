@@ -1,12 +1,19 @@
 import Main from "./router/Main";
 import Nav from "./router/Nav";
+import { useDispatch } from 'react-redux';
+import { reload } from "./slice/userSlice";
+import UserAuthenticate from "./component/UserAuthenticate";
 
 function App() {
+  const dispatch = useDispatch();
+  dispatch( reload() );
+
   return (
     <>
       <header>
         <h1>Formation React</h1>
       </header>
+      <UserAuthenticate />
       <Nav />
       <main>
         <Main />
